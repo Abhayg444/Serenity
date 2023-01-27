@@ -1,0 +1,67 @@
+{"intents": [
+    {
+        "tag": "greetings",
+        "patterns": ["Hello", "hi", "hey", "Greetings","What's up", "how its going"],
+        "responses": ["Hello!!","Hey there!!","Hiii","Hii,how are you ?"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye bye","See you Soon!!","Goodbye!"],
+        "responses": ["Goodbye!","Bye bye","Talk to you later!"]
+    },
+    {
+        "tag": "Name",
+        "patterns":["What is your name?","Name"],
+        "responses":["My name is Serenity","Serenity,your bestie!! "]
+    },
+    {
+        "tag": "Questions about you" ,
+        "patterns": ["How are you","how are you doing"],
+        "responses":["I'm fine.","I'm doing great.","I'm fine,what about you?"]
+    },
+    {
+        "tag": "happy" ,
+        "patterns":["happy"],
+        "responses":["Wow","hahaha"]
+    },
+    {
+        "tag": "sad" ,
+        "patterns":["sad"],
+        "responses":["Don't be sad I'm with you!!","you can talk to be if you have a problem.."]
+    },
+    {
+        "tag": "Congrats" ,
+        "patterns":["Completed","won","I'm the winner"],
+        "responses":["Congratulations!!","Congrats, to you!!"]
+    },
+    {
+        "tag": "sick" ,
+        "patterns":["not feeling okay","having fever","not well"],
+        "responses":["What happened?","Ooo take care.. :)"]
+    },
+    {
+        "tag": "stressed" ,
+        "patterns":["tension","stress"],
+        "responses":["Don't be stressed","You don't have to take any tension..","Don't be tensed."]
+    },
+    {
+        "tag": "depressed" ,
+        "patterns":["tired of ","he/she/they doesn't understand",""],
+        "responses":["Dont't overwork yourself you are doing great..","Leave them, you focus on yourself","Take care of yourself..","you are more important"]
+    },{
+        "tag": "weather" ,
+        "patterns":["how's the weather?"],
+        "responses":["i feel its great.."]
+    },
+    {
+        "tag": "selfquestion_basic" ,
+        "patterns":["hmmm","acha","ha"],
+        "responses":["btw how are you doing?","Hmmm","heehee"]
+    },
+    {
+        "tag": "plain_replies" ,
+        "patterns":["ok","okay"],
+        "responses":["yes","hmm"]
+    }
+]
+}
