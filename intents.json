@@ -62,6 +62,11 @@
         "tag": "plain_replies" ,
         "patterns":["ok","okay"],
         "responses":["yes","hmm"]
+    },
+    {
+        "tag": "Casual" ,
+        "patterns":["i'm fine","i'm good","well great"],
+        "responses":["Good to see you in pink of health","Ooh I'm fine too!!"]
     }
 ]
 }
