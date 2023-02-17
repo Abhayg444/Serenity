@@ -11,14 +11,14 @@ from tensorflow.keras.layers import Dense , Activation, Dropout
 from tensorflow.keras.optimizers import SGD
 from nltk.stem import WordNetLemmatizer 
 
+'''
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
+'''
 
 lemmatizer = WordNetLemmatizer()
-
 intents = json.loads(open('intents.json').read())
-
 words = []
 classes =[]
 documents =[]

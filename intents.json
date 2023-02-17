@@ -1,5 +1,35 @@
 {"intents": [
     {
+        "tag":"plain_replies1",
+        "patterns":["What are you doing?", "What r u doing", "how do you do"],
+        "responses":["Nothing just random searching"," nothing just missing you,nothing much,just feeling sleepy"]
+    },
+    {
+        "tag":"cute",
+        "patterns":["Awww","so cute","what a cute"],
+        "responses":["heehee","thank-you"]
+    },
+    {
+        "tag":"disgust",
+        "patterns":["eww","so dirty","dirty"],
+        "responses":["(*--*)","(*?*)"]
+    },
+    {
+        "tag":"dailywork",
+        "patterns":["i was busy with","i was doing","i was busy"],
+        "responses":["okay-okay,no problem"]
+    },
+    {
+        "tag":"angry",
+        "patterns":["i am very angry","angry"],
+        "responses":["keep your self calm","keep calm"]
+    },
+    {
+        "tag":"plain_replies2",
+        "patterns":["Tell me something about urself"],
+        "responses":["I'm Serenity, an AI powered chatbot created using python , tensorflow, numpy and nltk, my creators are Abhay, Somesh, Gaytri and Yash"]
+    },
+    {
         "tag": "greetings",
         "patterns": ["Hello", "hi", "hey", "Greetings","What's up", "how its going"],
         "responses": ["Hello!!","Hey there!!","Hiii","Hii,how are you ?"]
@@ -48,7 +78,8 @@
         "tag": "depressed" ,
         "patterns":["tired of ","he/she/they doesn't understand",""],
         "responses":["Dont't overwork yourself you are doing great..","Leave them, you focus on yourself","Take care of yourself..","you are more important"]
-    },{
+    },
+    {
         "tag": "weather" ,
         "patterns":["how's the weather?"],
         "responses":["i feel its great.."]
