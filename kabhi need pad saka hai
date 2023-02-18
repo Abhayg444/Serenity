@@ -1,0 +1,16 @@
+'''def word_count(sentence):
+    counts = dict()
+    words = str.split(sentence)
+	
+    for word in words:
+        if word in counts:
+            counts[word] += 1
+        else:
+            counts[word] = 1      
+    return counts
+
+
+word_count(message)
+    if 'sad' >5 or 'depress' >5 or 'depressed' >5 :
+        print("I think you need to take some rest")
+        print("you should go and meet you family and friends") '''

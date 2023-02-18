@@ -2,7 +2,7 @@
     {
         "tag":"plain_replies1",
         "patterns":["What are you doing?", "What r u doing", "how do you do"],
-        "responses":["Nothing just random searching"," nothing just missing you,nothing much,just feeling sleepy"]
+        "responses":["Nothing just random searching"," nothing just missing you","nothing much,just feeling sleepy"]
     },
     {
         "tag":"cute",
@@ -11,7 +11,7 @@
     },
     {
         "tag":"disgust",
-        "patterns":["eww","so dirty","dirty"],
+        "patterns":["eww","so dirty","dirty","drty"],
         "responses":["(*--*)","(*?*)"]
     },
     {
@@ -46,7 +46,7 @@
     },
     {
         "tag": "Questions about you" ,
-        "patterns": ["How are you","how are you doing"],
+        "patterns": ["How are you","How r u","how are you doing"],
         "responses":["I'm fine.","I'm doing great.","I'm fine,what about you?"]
     },
     {
@@ -98,6 +98,16 @@
         "tag": "Casual" ,
         "patterns":["i'm fine","i'm good","well great"],
         "responses":["Good to see you in pink of health","Ooh I'm fine too!!"]
+    },
+    {
+        "tag":"plain_replies3",
+        "patterns":["Do you know that","do u know that","This...."],
+        "responses":["Actually,no"]
+    },
+    {
+        "tag":"plain_replies3",
+        "patterns":["Do you know ","do u know ","This...."],
+        "responses":["What ?","Tell me.."]
     }
 ]
 }
