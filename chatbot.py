@@ -49,19 +49,10 @@ def get_response(intents_list, intents_json):
             result = random.choice(i['responses'])
             break
     return result
-
-#def word_c(str, word):
-    a = str.split(" ")
-    count = 0
-    for i in range(0, len(a)):
-        if (word == a[i]):
-           count = count + 1
-    return count      
 print("Go! Bot is runnning")
 
 while True:
     message = input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
-    #word_c(message,depress)
     print(res)

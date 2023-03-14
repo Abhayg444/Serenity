@@ -1,4 +1,4 @@
-'''def word_count(sentence):
+def word_count(sentence):
     counts = dict()
     words = str.split(sentence)
 	
@@ -13,4 +13,18 @@
 word_count(message)
     if 'sad' >5 or 'depress' >5 or 'depressed' >5 :
         print("I think you need to take some rest")
-        print("you should go and meet you family and friends") '''
+        print("you should go and meet you family and friends")
+        print("Here are the numbers of some psychatrist: \n1.Dr. Vijay Chinchole\n9876542364\n2.Dr. Gourav Trivedi\n9784627562\n3.Dr. Deepak Kelkar\n9761254324")
+
+
+
+        def word_c(str, word):
+    a = str.split(" ")
+    count = 0
+    for i in range(0, len(a)):
+        if (word == a[i]):
+           count = count + 1
+    return count   
+
+def stress_scale(count):
+    if 
