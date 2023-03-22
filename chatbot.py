@@ -49,10 +49,25 @@ def get_response(intents_list, intents_json):
             result = random.choice(i['responses'])
             break
     return result
+
+def sad_count(string):
+    count = string.count('sad')
+    if count == 3:
+        print("i think you are sad.")
+    elif count == 5:
+        print("Don't be so sad.")
+
+    count = string.count('depressed')
+    if count == 3:
+        print("I think you are depressed \nhere are some wys you can curb it \n1.Take soe deep breaths. \n2. Talk to your family and friends\n3. Visit a theraphist")
+    elif count == 5:
+        print("Here are the numbers of some psychatrist: \n1.Dr. Vijay Chinchole\n9876542364\n2.Dr. Gourav Trivedi\n9784627562\n3.Dr. Deepak Kelkar\n9761254324")
+
 print("Go! Bot is runnning")
 
 while True:
     message = input("")
     ints = predict_class(message)
+    sad_count(message)
     res = get_response(ints, intents)
     print(res)

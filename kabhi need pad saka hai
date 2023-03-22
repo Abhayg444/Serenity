@@ -1,36 +1,21 @@
-'''def word_count(sentence):
-    counts = dict()
-    words = str.split(sentence)
-	
-    for word in words:
-        if word in counts:
-            counts[word] += 1
-        else:
-            counts[word] = 1      
-    return counts
-
-
-word_count(message)
-    if 'sad' >5 or 'depress' >5 or 'depressed' >5 :
-        print("I think you need to take some rest")
-        print("you should go and meet you family and friends")
-        print("Here are the numbers of some psychatrist: \n1.Dr. Vijay Chinchole\n9876542364\n2.Dr. Gourav Trivedi\n9784627562\n3.Dr. Deepak Kelkar\n9761254324")
-
-
-
-        def word_c(str, word):
-    a = str.split(" ")
-    count = 0
-    for i in range(0, len(a)):
-        if (word == a[i]):
-           count = count + 1
-    return count   
-
-def stress_scale(count):
-    if 
-    ,
+''',
     {
         "tag":"",
         "patterns":[""],
         "responses":[""]
     }
+
+
+    word_count = {word: string.count(word) for word in word_list}
+    for word =='sad', count in word_count.items():
+        if count == 3:
+            print("i think you are sad.")
+        elif count == 5
+            print("Don't be so sad.")
+
+    word_count = {word: string.count(word) for word in word_list}
+    for 'depressed' or 'depressing', count in word_count.items():
+        if count == 3
+        print("I think you are depressed \nhere are some wys you can curb it \n1.Take soe deep breaths. \n2. Talk to your family and friends\n3. Visit a theraphist")
+        elif count == 5
+    print("Here are the numbers of some psychatrist: \n1.Dr. Vijay Chinchole\n9876542364\n2.Dr. Gourav Trivedi\n9784627562\n3.Dr. Deepak Kelkar\n9761254324")
