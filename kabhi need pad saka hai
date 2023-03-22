@@ -1,4 +1,4 @@
-def word_count(sentence):
+'''def word_count(sentence):
     counts = dict()
     words = str.split(sentence)
 	
@@ -28,3 +28,9 @@ word_count(message)
 
 def stress_scale(count):
     if 
+    ,
+    {
+        "tag":"",
+        "patterns":[""],
+        "responses":[""]
+    }

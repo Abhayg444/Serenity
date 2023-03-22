@@ -107,7 +107,12 @@
     {
         "tag":"plain_replies3",
         "patterns":["Do you know ","do u know ","This...."],
-        "responses":["What ?","Tell me.."]
+        "responses":["What ?\n tell me","Tell me.."]
+    },
+    {
+        "tag":"mixed",
+        "patterns":["Umm fine, but i dont't","i don't know what to do"],
+        "responses":["You should think about it","I think you should take some deep breaths and think upon it"]
     }
 ]
 }
