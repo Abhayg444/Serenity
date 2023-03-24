@@ -92,8 +92,12 @@ while True:
         prompt = 'Chalra'
         while prompt!= 'exit': 
             prompt = str(input("Enter your question: "))
-            res = generate_response(prompt)
-            print(res)
+            if prompt == 'exit':
+                print("Serenity is back!!\n Let's Chat!!\n")
+                break;
+            else:
+                res = generate_response(prompt)
+                print(res)
     else :
         res = get_response(ints, intents)
         sad_count(message,res)
