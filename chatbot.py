@@ -67,7 +67,7 @@ def generate_response(prompt):
     return response.choices[0].text.strip()
 
 
-def sad_count(string):
+def sad_count(string,response):
     count = string.count('sad')
     if count == 3:
         print("i think you are sad.")
@@ -79,17 +79,21 @@ def sad_count(string):
         print("I think you are depressed \nhere are some wys you can curb it \n1.Take soe deep breaths. \n2. Talk to your family and friends\n3. Visit a theraphist")
     elif count == 5:
         print("Here are the numbers of some psychatrist: \n1.Dr. Vijay Chinchole\n9876542364\n2.Dr. Gourav Trivedi\n9784627562\n3.Dr. Deepak Kelkar\n9761254324")
+    else:
+        print(response)
 
 print("Go! Bot is runnning")
 
 while True:
     message = input("")
     ints = predict_class(message)
-    sad_count(message)
     if "search" in message.lower():
         print("ChatGPT mode active:")
-        res = generate_response(prompt=str(input("Enter your question: ")))
-        print(res)
+        prompt = 'Chalra'
+        while prompt!= 'exit': 
+            prompt = str(input("Enter your question: "))
+            res = generate_response(prompt)
+            print(res)
     else :
         res = get_response(ints, intents)
-        print(res)
+        sad_count(message,res)
