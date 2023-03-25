@@ -56,7 +56,7 @@
     },
     {
         "tag": "sad" ,
-        "patterns":["sad"],
+        "patterns":["i'm sad","i'm feeling sad"],
         "responses":["Don't be sad I'm with you!!","you can talk to be if you have a problem.."]
     },
     {
