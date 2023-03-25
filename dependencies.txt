@@ -1,5 +1,0 @@
-install all the necesscary dependencies using 
-pip freeze requirements .txt
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
