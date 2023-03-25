@@ -48,7 +48,7 @@ class ChatApplication:
         bottom_label.place(relwidth=1, rely=0.825)
 
         # message entry box
-        self.msg_entry = Entry(bottom_label, bg="#2C3E50", fg=TEXT_COLOR, font=FONT)
+        self.msg_entry = Entry(bottom_label, bg="white", fg=TEXT_COLOR, font=FONT)
         self.msg_entry.place(relwidth=0.74, relheight=0.06, rely=0.008, relx=0.011)
         self.msg_entry.focus()
         self.msg_entry.bind("<Return>", self._on_enter_pressed)
