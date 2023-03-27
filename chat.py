@@ -90,7 +90,7 @@ print("Go! Bot is runnning")
 
 def sere_res(msg):
     ints = predict_class(msg)
-    if "search" in msg.lower():
+    if "search" or "what " or "how" or "where" or "who" or "when" in msg.lower():
         res = gpt(msg)
     else:
         res = get_response(ints, intents)

@@ -35,13 +35,15 @@ class ChatApplication:
         # text widget
         self.text_widget = Text(self.window, width=20, height=2, bg=BG_COLOR, fg=TEXT_COLOR,
                                 font=FONT, padx=5, pady=5)
-        self.text_widget.place(relheight=0.745, relwidth=1, rely=0.08)
-        self.text_widget.configure(cursor="arrow", state=DISABLED)
+        self.text_widget.place(relheight=0.745, relwidth=0.954, rely=0.08)
 
         # scroll bar
-        scrollbar = Scrollbar(self.text_widget)
-        scrollbar.place(relheight=1, relx=0.974)
+        scrollbar = Scrollbar(self.window)
+        scrollbar.place(relheight=0.745, relx=0.964, rely=0.08)
+        self.text_widget.configure(yscrollcommand=scrollbar.set)
         scrollbar.configure(command=self.text_widget.yview)
+
+        self.text_widget.configure(cursor="arrow", state=DISABLED)
 
         # bottom label
         bottom_label = Label(self.window, bg=BG_GRAY, height=80)
