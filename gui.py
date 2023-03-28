@@ -7,7 +7,7 @@ TEXT_COLOR = "black"
 
 FONT = "Helvetica 14"
 FONT_BOLD = "Helvetica 13 bold"
-
+wel = 'This is a Serenity, AI Chatbot \n type a message and see what it can do...'
 
 class ChatApplication:
 
@@ -36,6 +36,7 @@ class ChatApplication:
         self.text_widget = Text(self.window, width=20, height=2, bg=BG_COLOR, fg=TEXT_COLOR,
                                 font=FONT, padx=5, pady=5)
         self.text_widget.place(relheight=0.745, relwidth=0.954, rely=0.08)
+        self.text_widget.insert(END, wel)
 
         # scroll bar
         scrollbar = Scrollbar(self.window)
