@@ -10,7 +10,7 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 bot_name = 'Serenity'
-openai.api_key = "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" 
+openai.api_key = "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" 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
