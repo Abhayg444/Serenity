@@ -5,9 +5,9 @@ BG_GRAY = "white"
 BG_COLOR = "white"
 TEXT_COLOR = "black"
 
-FONT = "Helvetica 14"
+FONT = "Poppins 14"
 FONT_BOLD = "Helvetica 13 bold"
-wel = 'This is a Serenity, AI Chatbot \n type a message and see what it can do...'
+wel = 'This is a Serenity, AI Chatbot \nType a message and see what it can do...\n\n'
 
 class ChatApplication:
 

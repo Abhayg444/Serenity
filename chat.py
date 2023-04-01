@@ -5,12 +5,11 @@ import numpy as np
 import tensorflow as tf
 import nltk
 import openai
-import os
 from nltk.stem import WordNetLemmatizer 
 
 from tensorflow.keras.models import load_model
 bot_name = 'Serenity'
-openai.api_key = "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" 
+openai.api_key = "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" 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
@@ -90,8 +89,18 @@ print("Go! Bot is runnning")
 
 def sere_res(msg):
     ints = predict_class(msg)
-    if "search" or "what " or "how" or "where" or "who" or "when" in msg.lower():
+    if "search"in msg.lower():
         res = gpt(msg)
+    elif "what"in msg.lower():
+        res = gpt(msg)
+    elif "where"in msg.lower():
+        res = gpt(msg)
+    elif "how"in msg.lower():
+        res = gpt(msg)
+    elif "when"in msg.lower():
+        res = gpt(msg)
+    elif "depressed"in msg.lower():
+        res = gpt('depression management')
     else:
         res = get_response(ints, intents)
     res = sad_count(msg,res)
