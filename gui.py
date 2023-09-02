@@ -1,6 +1,6 @@
 from tkinter import *
 from chat import *
-
+from ai import *
 BG_GRAY = "white"
 BG_COLOR = "white"
 TEXT_COLOR = "black"
