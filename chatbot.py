@@ -17,7 +17,7 @@ from nltk.stem import WordNetLemmatizer
 
 from tensorflow.keras.models import load_model
 
-openai.api_key = "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" 
+openai.api_key = "Enter your own" 
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
