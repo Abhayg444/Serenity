@@ -4,12 +4,12 @@ import pickle
 import numpy as np
 import tensorflow as tf
 import nltk
-import openai
+import ai
 from nltk.stem import WordNetLemmatizer 
-
+from ai import *
 from tensorflow.keras.models import load_model
 bot_name = 'Serenity'
-openai.api_key = "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" 
+
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 
@@ -51,20 +51,6 @@ def get_response(intents_list, intents_json):
             result = random.choice(i['responses'])
             break
     return result
-
-
-
-def generate_response(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.7,
-    )
-    return response.choices[0].text.strip()
-
 
 def sad_count(string,response):
     count = string.count('sad')
