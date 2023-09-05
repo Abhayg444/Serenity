@@ -5,6 +5,7 @@ import numpy as np
 import tensorflow as tf
 import nltk
 import os
+import openai
 from ai import*
 
 '''
@@ -57,6 +58,17 @@ def get_response(intents_list, intents_json):
             result = random.choice(i['responses'])
             break
     return result
+
+def generate_response(prompt):
+    response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.7,
+    )
+    return response.choices[0].text.strip()
 
 def sad_count(string,response):
     count = string.count('sad')
