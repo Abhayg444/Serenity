@@ -1,4 +1,5 @@
 import random
+import time
 import json
 import pickle
 import numpy as np
@@ -53,15 +54,18 @@ def get_response(intents_list, intents_json):
     return result
 
 def generate_response(prompt):
-    response = openai.Completion.create(
-        engine="text-davinci-003",
-        prompt=prompt,
-        max_tokens=1024,
-        n=1,
-        stop=None,
-        temperature=0.7,
-    )
-    return response.choices[0].text.strip()
+    try:
+        response = openai.Completion.create(
+            engine="text-davinci-003",
+            prompt=prompt,
+            max_tokens=1024,
+            n=1,
+            stop=None,
+            temperature=0.7,
+        )
+        return response.choices[0].text.strip()
+    except openai.error.RateLimitError as e:
+        return "Rate limit exceeded. Retry in 10 sec"
 
 def sad_count(string,response):
     count = string.count('sad')
