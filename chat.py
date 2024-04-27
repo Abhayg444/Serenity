@@ -7,7 +7,6 @@ import tensorflow as tf
 import nltk
 import openai
 from nltk.stem import WordNetLemmatizer 
-from ai import *
 
 from tensorflow.keras.models import load_model
 bot_name = 'Serenity'
